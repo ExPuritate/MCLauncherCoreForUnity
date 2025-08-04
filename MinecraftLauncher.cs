@@ -264,7 +264,7 @@ public class MinecraftLauncher : MonoBehaviour
 #if UNITY_STANDALONE_WIN || UNITY_EDITOR_WIN
         using (OpenFileDialog dialog = new OpenFileDialog())
         {
-            dialog.Filter = "Java Executable|java.exe";
+            dialog.Filter = "Java Executable|java.exe|Java Executable for Window Subsystem|javaw.exe";
             dialog.Title = "选择 java.exe";
             if (dialog.ShowDialog() == DialogResult.OK)
             {
